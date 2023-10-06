@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seller Login</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+		<nav class="navbar">
+        <div class="logo">
+            <img src="./books.png" alt="">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+            <li><a href="./CustomerRegister.html">Register</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+
+	<h1 class="mainHeading">Welcome to the Retro Reads</h1>
+
+	<form action="adminlog" method="post">
+		
+		<table class="tab" >
+			
+			
+			<tr>
+				<td>
+					<h4 style="text-align: center; font-weight: bold;">Admin Login</h4>
+					<p style="text-align: center; font-weight: 500;">
+						<a href="CustomerLogin.html" style="color:rgb(222, 4, 4); font-size:medium;  ">Click Here to Login as <b>Customer</b></a></p>
+					
+					<label for="userName"><img class="inputImg" src="./user.png" /> </label> 
+					<input type="text" class="inputValue"
+						name="username" id="userName" placeholder="Username" required>
+						
+					<br /> 
+				
+					<label for="Password"> <img class="inputImg" src="./password.png" /> </label>
+					<input
+						type="password" class="inputValue" name="password" placeholder="Password" required
+						id="Password">
+					<br /> 
+					<input class="loginBtn"
+						type="submit" value=" Login">
+				</td>
+			</tr>
+		</table>
+	</form>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
+		<script>
+        document.addEventListener('DOMContentLoaded', function () {
+	    const menuToggle = document.getElementById('menu-toggle');
+	    const navLinks = document.getElementById('nav-links');
+	
+	    menuToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+    });
+	});
+    </script>
+</body>
+
+</html>
